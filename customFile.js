@@ -96,6 +96,7 @@ var defaultSites = {
   'Vanity Fair': 'vanityfair.com',
   'Vrij Nederland': 'vn.nl',
   'Wired': 'wired.com',
+  'levelup': 'levelup.gitconnected.com'
 };
 
 const restrictions = {
@@ -144,6 +145,7 @@ const allow_cookies = [
 'volkskrant.nl',
 'washingtonpost.com',
 'wsj.com',
+'levelup.gitconnected.com',
 ]
 
 // Removes cookies after page load
@@ -181,7 +183,8 @@ const remove_cookies = [
 'thestar.com',
 'towardsdatascience.com',
 'vn.nl',
-'washingtonpost.com'
+'washingtonpost.com',
+'levelup.gitconnected.com',
 ]
 
 // select specific cookie(s) to hold from remove_cookies domains
