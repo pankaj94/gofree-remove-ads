@@ -50,6 +50,9 @@ const urlFuncMap = [
     {
         siteName : 'washingtonpost.com',
         funcName : 'removePayWallUsingCookie'
+    },{
+        siteName : 'levelup.gitconnected.com',
+        funcName : 'removeAdMedium'
     },
     
 ];
@@ -229,7 +232,9 @@ const removeAdMedium = () => {
     }
     localStorage.clear();
     sessionStorage.clear();
-    clearCookieDomain('medium.com')
+    clearCookieDomain('medium.com');
+    clearCookieDomain('levelup.gitconnected.com');
+    // console.clear();
     
     let has500error = getElementFromClass('wm wn r');
     if(isOperatable(has500error)){
@@ -572,4 +577,5 @@ chrome.runtime.onMessage.addListener(
             disableScriptOnLoad();
             time = 1;
       }
+      return true;
   });

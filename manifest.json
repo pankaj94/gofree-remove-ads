@@ -9,7 +9,7 @@
     "persistent": true
   },
   "optional_permissions": [
-    "< all_urls>"
+    "<all_urls>"
     ],
   "content_scripts": [
     {
